@@ -1,0 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;  
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #eaeaea;
+}
+.content {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+}
+.content > div {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 50%;
+}
+.text {
+  padding: 2em;
+}
+.image {
+  background: url('agmkowalczyk.jpg') bottom center ;
+  background-size: cover;  
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3em;
+  line-height: 1.5em;
+  margin-top: 20vh;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7em;
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: rgba(26, 94, 182, 0.774);
+}
+.logo {
+  color: #888;
+}
+.fab {
+  margin: 5px 10px;
+}
+@media (max-width: 600px) {
+  .content > div {
+    width: 100%;
+  }
+  .image {
+    -webkit-order: 1;
+    -ms-flex-order: -1;
+    order: -1;
+    min-height: 50vh;
+  }
+  h1 {
+    margin-top: 5vh;
+  }
+}
