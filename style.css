@@ -36,7 +36,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.3em;
   line-height: 1.5em;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -47,13 +47,90 @@ a {
   text-decoration: none;
   color: rgba(26, 94, 182, 0.774);
 }
+a:hover {
+  color: rgba(1, 56, 128, 0.966);
+}
 .logo {
   color: #888;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .fab {
   margin: 5px 10px;
 }
-@media (max-width: 600px) {
+.logo-img {
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+.typescript {
+  background-image: url(./svg/typescript.svg);
+  background-size: cover;
+}
+.mongodb {
+  background-image: url(./svg/mongodb.svg);
+}
+.graph-ql {
+  background-image: url(./svg/graph-ql.svg);
+  height: 32px;
+}
+.gitlab {
+  background-image: url(./svg/gitlab.svg);
+  height: 35px;
+  background-size: auto;
+}
+.material-ui {
+  background-image: url(./svg/material-ui.svg);
+  height: 28px;
+}
+.next {
+  background-image: url(./svg/nextjs.svg);
+  height: 31px;
+  width: 31px; 
+  background-size: cover;
+}
+.tailwind {
+  background-image: url(./svg/tailwind.svg);
+  height: 20px;
+  margin-right: 6px;
+}
+form {
+  max-width: 320px;
+  margin-top: 30px;
+}
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    display: block;
+}
+input,
+textarea,
+button {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  line-height: 2;
+  margin: 5px 0;
+}
+input,
+textarea {
+  padding: 2px 5px;
+  display: block;
+  width: 100%;
+}
+button {
+  padding: 2px 15px;
+  cursor: pointer;
+  background: #eaeaea;
+  border-color: #ccc;
+}
+button:hover {
+  background: #d4d4d4;
+}
+@media (max-width: 768px) {
   .content > div {
     width: 100%;
   }
